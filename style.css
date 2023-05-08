@@ -1,12 +1,43 @@
+/* barlow-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/barlow-v12-latin-600.woff2") format("woff2"),
+    url("../fonts/barlow-v12-latin-600.woff") format("woff");
+}
+
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/fraunces-v30-latin-700.woff2") format("woff2"),
+    url("../fonts/fraunces-v30-latin-700.woff") format("woff");
+}
+/* fraunces-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fraunces-v30-latin-900.woff2") format("woff2"),
+    url("../fonts/fraunces-v30-latin-900.woff") format("woff");
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
+  font-size: 18px;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--font_barlow);
 }
 input,
 button,
@@ -17,4 +48,128 @@ select {
 img {
   display: block;
   max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font_fraunces);
+}
+
+:root {
+  --soft_red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --cyan_text: hsl(167, 40%, 24%);
+  --blue_text: hsl(198, 62%, 26%);
+  --cyan: hsl(168, 34%, 41%);
+  --dark_blue: hsl(212, 27%, 19%);
+  --very_dark_grayish_blue: hsl(213, 9%, 39%);
+  --dark_grayish_blue: hsl(232, 10%, 55%);
+  --grayish_blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --font_barlow: "Barlow";
+  --font_fraunces: "Fraunces";
+}
+
+.width_1440 {
+  max-width: 1440px;
+}
+
+/* ----- header / hero ----- */
+nav > ul > li {
+  list-style-type: none;
+  justify-content: center;
+}
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0 20px;
+}
+.nav_btn {
+  background-color: var(--white);
+  border-radius: 15px;
+  border: none;
+  font-family: var(--font_fraunces);
+  padding: 5px 20px;
+  color: var(--cyan_text);
+  text-transform: uppercase;
+}
+.nav_btn:hover {
+  background-color: var(--cyan);
+  color: var(--white);
+}
+header {
+  background-image: url(img/desktop/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw;
+  padding: 20px;
+}
+header h1 {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+.navbar-nav {
+  margin-top: 10px;
+  display: flex;
+  justify-self: end;
+}
+.navbar-nav .nav-link {
+  color: var(--white);
+  padding: 0 20px;
+}
+#navbarNav {
+  justify-content: end;
+}
+
+@media (max-width: 767px) {
+  /* ----- header / hero ----- */
+  header {
+    background-image: url(img/mobile/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100vw;
+    padding: 20px;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: var(--white);
+  }
+  .navbar-toggler-icon {
+    color: var(--white);
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-collapse.show {
+    display: block;
+  }
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+  .navbar-nav .nav-link {
+    color: var(--blue_text);
+  }
+  .nav_btn {
+    color: var(--cyan);
+    background-color: var(--yellow);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
