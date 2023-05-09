@@ -61,7 +61,7 @@ h4 {
   --yellow: hsl(51, 100%, 49%);
   --cyan_text: hsl(167, 40%, 24%);
   --blue_text: hsl(198, 62%, 26%);
-  --cyan: hsl(168, 34%, 41%);
+  --cyan: hsl(168, 34%, 51%);
   --dark_blue: hsl(212, 27%, 19%);
   --very_dark_grayish_blue: hsl(213, 9%, 39%);
   --dark_grayish_blue: hsl(232, 10%, 55%);
@@ -128,6 +128,39 @@ header h1 {
   justify-content: end;
 }
 
+/* ----- img gallery ---- */
+.desktop-image {
+  min-height: 100%;
+}
+.desktop-image,
+.mobile-image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+.mobile-image {
+  display: none;
+}
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----- footer / contact ----- */
+footer {
+  background-color: var(--cyan);
+  color: var(--cyan_text);
+}
+footer > div {
+  gap: 20px;
+}
+footer > div > p:hover,
+footer > div > img:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   /* ----- header / hero ----- */
   header {
@@ -163,6 +196,23 @@ header h1 {
   .nav_btn {
     color: var(--cyan);
     background-color: var(--yellow);
+  }
+
+  /* ----- img gallery ---- */
+  .desktop-image,
+  .mobile-image {
+    width: 100%;
+  }
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+  }
+  .grid_cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 

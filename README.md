@@ -1,36 +1,30 @@
 # LANDING PAGE
 
 ## Description:
+
 The challenge
 
 Your challenge is to build out this landing page and get it looking as close to the design as possible.
 
-This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). 
+This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef).
 
 ## Technologies Used:
-* HTML
-* CSS
-* JavaScript
-* BOOTSTRAP
+
+- HTML
+- CSS
+- JavaScript
+- BOOTSTRAP
 
 ## Features:
-* responsive design
+
+- responsive design
 
 ## Demo:
-View project demo at 
+
+View project demo at https://jb-landing-page.netlify.app/
 
 ## Contributing:
+
 If you would like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
-## HOW TO USE: / TECHNOLOGIES: / COLLABORATORS: / LICENSE:
 
-## FONTS:
-* https://fonts.google.com/
-* https://gwfh.mranftl.com/fonts
-
-## FAVICON:
-* https://www.favicon-generator.org/
-* https://favicon.io/
-
-## Basic writing and formatting syntax
-* https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax 
