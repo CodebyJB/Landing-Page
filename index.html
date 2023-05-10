@@ -75,7 +75,7 @@
             ><img src="img/logo.svg" alt="Logo"
           /></a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -85,7 +85,10 @@
           >
             <span class="navbar-toggler-icon navbar-dark"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
@@ -94,10 +97,13 @@
                 <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#project">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-primary nav_btn" href="#contact" role="button"
+                <a
+                  class="btn btn-primary nav_btn text-uppercase border-0"
+                  href="#contact"
+                  role="button"
                   >Contact</a
                 >
               </li>
@@ -113,63 +119,186 @@
       </header>
 
       <main>
-        <div  class="row gx-0 grid_cont">
-        <div class="col ">
-        <div class="image-wrapper">
-          <img
-            src="img/desktop/image-gallery-milkbottles.jpg"
-            alt="Milkbottles"
-            class="img-fluid desktop-image"
-          />
-          <img
-            src="img/mobile/image-gallery-milkbottles.jpg"
-            alt="Milkbottles"
-            class="img-fluid mobile-image"
-          />
+        <div id="about">
+          <div class="d-flex flex-column-reverse flex-md-row">
+            <div
+              class="col-12 col-md-6 d-flex flex-column justify-content-center p-5 my-5 align-items-start"
+            >
+              <h2 class="pb-3">Transform your brand</h2>
+              <p>
+                We are a full-service creative agency specializing in helping
+                brands grow fast. Engage your clients through compelling visuals
+                that do most of the marketing for you.
+              </p>
+              <a href="#projects" class="yellow_a">Learn more</a>
+            </div>
+            <div class="image-wrapper d-flex col-12 col-md-6">
+              <img
+                src="img/desktop/image-transform.jpg"
+                alt="Transform image"
+                class="img-fluid desktop-image"
+              />
+              <img
+                src="img/mobile/image-transform.jpg"
+                alt="Transform image"
+                class="img-fluid mobile-image"
+              />
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row">
+            <div class="image-wrapper d-flex col-12 col-md-6">
+              <img
+                src="img/desktop/image-stand-out.jpg"
+                alt="Stand out image"
+                class="img-fluid desktop-image"
+              />
+              <img
+                src="img/mobile/image-stand-out.jpg"
+                alt="Stand out image"
+                class="img-fluid mobile-image"
+              />
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-start p-5 my-5"
+            >
+              <h2 class="pb-3">Stand out to the right audience</h2>
+              <p>
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we’ll build and
+                extend your brand in digital places.
+              </p>
+              <a href="#projects" class="red_a">Learn more</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="image-wrapper">
-          <img
-            src="img/desktop/image-gallery-orange.jpg"
-            alt="Orange"
-            class="img-fluid desktop-image"
-          />
-          <img
-            src="img/mobile/image-gallery-orange.jpg"
-            alt="Orange"
-            class="img-fluid mobile-image"
-          />
+
+        <div id="services" class="d-flex">
+          <div
+            class="graphic text-center d-flex justify-content-end flex-column col-12 col-md-6"
+          >
+            <h3>Graphic design</h3>
+            <p class="px-5 pb-5 pt-3">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+          <div
+            class="photo text-center d-flex justify-content-end flex-column col-12 col-md-6"
+          >
+            <h3>Photography</h3>
+            <p class="mx-5 pb-5 pt-3">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="image-wrapper">
-          <img
-            src="img/desktop/image-gallery-cone.jpg"
-            alt="Cone"
-            class="img-fluid desktop-image"
-          />
-          <img
-            src="img/mobile/image-gallery-cone.jpg"
-            alt="Cone"
-            class="img-fluid mobile-image"
-          />
+
+        <div id="testimonials">
+          <h2 class="text-center pt-5 my-5 text-uppercase">
+            Client testimonials
+          </h2>
+          <div class="d-flex pb-5 my-5 mobile_col">
+            <div class="text-center px-4">
+              <img
+                src="img/image-emily.jpg"
+                alt="Emily"
+                class="rounded-circle m-auto py-5"
+              />
+              <p>
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <h4 class="pt-4">Emily R.</h4>
+              <p>Marketing Director</p>
+            </div>
+            <div class="text-center px-4">
+              <img
+                src="img/image-thomas.jpg"
+                alt="Thomas"
+                class="rounded-circle m-auto py-5"
+              />
+              <p>
+                Sunnyside’s enthusiasm coupled with their keen interest in our
+                brand’s success made it a satisfying and enjoyable experience.
+              </p>
+              <h4 class="pt-4">Thomas S.</h4>
+              <p>Chief Operating Officer</p>
+            </div>
+            <div class="text-center px-4">
+              <img
+                src="img/image-jennie.jpg"
+                alt="Jennie"
+                class="rounded-circle m-auto py-5"
+              />
+              <p>
+                Incredible end result! Our sales increased over 400% when we
+                worked with Sunnyside. Highly recommended!
+              </p>
+              <h4 class="pt-4">Jennie F.</h4>
+              <p>Business Owner</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="image-wrapper">
-          <img
-            src="img/desktop/image-gallery-sugarcubes.jpg"
-            alt="Sugarcubes"
-            class="img-fluid desktop-image"
-          />
-          <img
-            src="img/mobile/image-gallery-sugar-cubes.jpg"
-            alt="Sugarcubes"
-            class="img-fluid mobile-image"
-          />
+
+        <div id="projects" class="row gx-0 grid_cont">
+          <div class="col">
+            <div class="image-wrapper">
+              <img
+                src="img/desktop/image-gallery-milkbottles.jpg"
+                alt="Milkbottles"
+                class="img-fluid desktop-image"
+              />
+              <img
+                src="img/mobile/image-gallery-milkbottles.jpg"
+                alt="Milkbottles"
+                class="img-fluid mobile-image"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="image-wrapper">
+              <img
+                src="img/desktop/image-gallery-orange.jpg"
+                alt="Orange"
+                class="img-fluid desktop-image"
+              />
+              <img
+                src="img/mobile/image-gallery-orange.jpg"
+                alt="Orange"
+                class="img-fluid mobile-image"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="image-wrapper">
+              <img
+                src="img/desktop/image-gallery-cone.jpg"
+                alt="Cone"
+                class="img-fluid desktop-image"
+              />
+              <img
+                src="img/mobile/image-gallery-cone.jpg"
+                alt="Cone"
+                class="img-fluid mobile-image"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="image-wrapper">
+              <img
+                src="img/desktop/image-gallery-sugarcubes.jpg"
+                alt="Sugarcubes"
+                class="img-fluid desktop-image"
+              />
+              <img
+                src="img/mobile/image-gallery-sugar-cubes.jpg"
+                alt="Sugarcubes"
+                class="img-fluid mobile-image"
+              />
+            </div>
+          </div>
         </div>
-      </div>
       </main>
 
       <footer id="contact">
@@ -177,9 +306,9 @@
           <img src="img/logo.svg" alt="Logo" class="m-auto" />
         </figure>
         <div class="d-flex justify-content-center pt-4">
-          <p>About</p>
-          <p>Services</p>
-          <p>Projects</p>
+          <a href="#about" class="text-decoration-none">About</a
+          ><a href="#services" class="text-decoration-none">Services</a
+          ><a href="#projects" class="text-decoration-none">Projects</a>
         </div>
         <div class="d-flex justify-content-center py-5">
           <img src="img/icon-facebook.svg" alt="Facebook Icon" />
